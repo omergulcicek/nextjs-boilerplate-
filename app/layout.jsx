@@ -10,6 +10,9 @@ const inter = Inter({
 export default function RootLayout({ children }) {
   return (
     <html lang="tr" className={inter.className}>
+      <head>
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </head>
       <body>{children}</body>
     </html>
   )
