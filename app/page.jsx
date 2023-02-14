@@ -1,7 +1,11 @@
+import { Button, H1 } from "@/components"
+
 export default function Page() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello, Next.js!</h1>
+      <H1 className="text-red-600">Hello, Next.js!</H1>
+
+      <Button className="rounded-xl">Ara</Button>
     </>
   )
 }
