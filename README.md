@@ -16,8 +16,9 @@
 - 💨 Kod yazarken anlık yenileme
 - 💯 [Lighthouse](https://pagespeed.web.dev/)'ta 100 puan!
 - 💻 Temiz, okunabilir kod
+- 💫 [react-icons](https://react-icons.github.io/react-icons/) ikonları
 - 📜 A11Y (Accessibility) uyumluluğu
-- 💫 react-icons ikonları
+- 🕒 [day.js](https://day.js.org/docs/en/display/format) ile tarih ve saat formatı
 
 ## Sürümler
 
