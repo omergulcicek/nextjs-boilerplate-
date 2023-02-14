@@ -17,14 +17,13 @@
 - 💯 [Lighthouse](https://pagespeed.web.dev/)'ta 100 puan!
 - 💻 Temiz, okunabilir kod
 - 📜 A11Y (Accessibility) uyumluluğu
-
+- 💫 react-icons ikonları
 
 ## Sürümler
 
 - React JS 18.2
 - Next.js 13
 - Tailwind CSS 3.2
-
 
 ## Başlarken
 
@@ -37,9 +36,9 @@ npm install
 ```
 
 Ardından geliştirme modunda yerel olarak çalıştırabilirsiniz:
+
 ```
 npm run dev
 ```
 
 Projenizi görmek için tarayıcınızla [http://localhost:3000](http://localhost:3000/)'i açın.
-
