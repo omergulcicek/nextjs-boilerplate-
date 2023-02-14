@@ -1,3 +1,4 @@
+import { Header, Footer } from "@/components"
 import { Inter } from "@next/font/google"
 import "./globals.css"
 
@@ -19,7 +20,11 @@ export default function RootLayout({ children }) {
         />
         <link rel="shortcut icon" href="/favicon.ico" />
       </head>
-      <body>{children}</body>
+      <body className="flex min-h-screen flex-col">
+        <Header />
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </body>
     </html>
   )
 }
