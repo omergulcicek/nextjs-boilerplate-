@@ -19,6 +19,7 @@
 - 💫 [react-icons](https://react-icons.github.io/react-icons/) ikonları
 - 📜 A11Y (Accessibility) uyumluluğu
 - 🕒 [day.js](https://day.js.org/docs/en/display/format) ile tarih ve saat formatı
+- ✴️ [aos](https://github.com/michalsnik/aos) animasyonları
 
 ## Sürümler
 
