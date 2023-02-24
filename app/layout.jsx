@@ -1,9 +1,6 @@
-"use client"
-
-import { RecoilRoot } from "recoil"
 import { Inter } from "@next/font/google"
 
-import { ThemeProvider } from "./themeProvider"
+import { Provider } from "./provider"
 import { Header, Footer } from "@/components"
 import "./globals.css"
 
@@ -15,30 +12,28 @@ const inter = Inter({
 
 export default function RootLayout({ children }) {
   return (
-    <RecoilRoot>
-      <html
-        lang="tr"
-        dir="ltr"
-        className={inter.className}
-        suppressHydrationWarning
-      >
-        <head>
-          <meta charset="utf-8" />
-          <meta http-equiv="x-ua-compatible" content="ie=edge" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-          />
-          <link rel="shortcut icon" href="/favicon.ico" />
-        </head>
-        <body className="flex min-h-screen flex-col">
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </ThemeProvider>
-        </body>
-      </html>
-    </RecoilRoot>
+    <html
+      lang="tr"
+      dir="ltr"
+      className={inter.className}
+      suppressHydrationWarning
+    >
+      <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </head>
+      <body className="flex min-h-screen flex-col">
+        <Provider attribute="class" defaultTheme="system" enableSystem>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </Provider>
+      </body>
+    </html>
   )
 }
