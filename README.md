@@ -4,7 +4,7 @@
 
 - ⚡ [Next.js](https://nextjs.org/) ile Server Side Rendering
 - 💎 [Tailwind CSS](https://tailwindcss.com/)
-- ✅ Olası sorunları vurgulayan [Strict Mode](https://beta.nextjs.org/docs/api-reference/next.config.js#appdir)
+- 🧺 [Recoil](https://recoiljs.org/) State Management 
 - 💖 [Prettier](https://prettier.io/) ile kod formatlayıcı
 - 🐶 Git Hookları için [Husky](https://typicode.github.io/husky/)
 - 💡 [aliases](https://nextjs.org/docs/advanced-features/module-path-aliases) ile bileşenleri `@/` kısayolu ile importlamak
