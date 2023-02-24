@@ -2,6 +2,8 @@
 
 import { RecoilRoot } from "recoil"
 import { Inter } from "@next/font/google"
+
+import { ThemeProvider } from "./themeProvider"
 import { Header, Footer } from "@/components"
 import "./globals.css"
 
@@ -14,7 +16,12 @@ const inter = Inter({
 export default function RootLayout({ children }) {
   return (
     <RecoilRoot>
-      <html lang="tr" dir="ltr" className={inter.className}>
+      <html
+        lang="tr"
+        dir="ltr"
+        className={inter.className}
+        suppressHydrationWarning
+      >
         <head>
           <meta charset="utf-8" />
           <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -25,9 +32,11 @@ export default function RootLayout({ children }) {
           <link rel="shortcut icon" href="/favicon.ico" />
         </head>
         <body className="flex min-h-screen flex-col">
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </ThemeProvider>
         </body>
       </html>
     </RecoilRoot>

@@ -3,6 +3,7 @@
 import { FaApple } from "react-icons/fa"
 import { Button, H1 } from "@/components"
 import { dateFormat } from "@/utils"
+import { ThemeSwitch } from "./themeSwitch"
 
 import { useEffect } from "react"
 import { useRecoilValue, useRecoilState } from "recoil"
@@ -30,6 +31,7 @@ export default function Page() {
           <span key={e}>{e}, </span>
         ))}
       </div>
+      <ThemeSwitch />
     </>
   )
 }
