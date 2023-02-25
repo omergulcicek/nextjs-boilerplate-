@@ -1,42 +1,26 @@
 "use client"
 
-import { FaApple } from "react-icons/fa"
-import { Button, H1 } from "@/components"
-import { dateFormat } from "@/utils"
-import { ThemeSwitch } from "./themeSwitch"
-
-import { useEffect } from "react"
-import { useRecoilValue, useRecoilState } from "recoil"
-import { itemsAtom, itemsSelector } from "@/store"
+import Link from "next/link"
+import { FiGithub } from "react-icons/fi"
+import { H1, Button } from "@/components"
 
 export default function Page() {
-  const itemsObj = useRecoilValue(itemsSelector)
-  const [items, setItems] = useRecoilState(itemsAtom)
-
-  useEffect(() => {
-    setItems((prev) => [...prev, 5])
-    setItems((prev) => [...prev, 6])
-
-    console.log(itemsObj)
-  }, [])
-
   return (
     <>
-      <H1 className="text-red-600">Hello, Next.js!</H1>
-      <Button className="rounded-xl">Ara</Button>
-      <FaApple size={40} color={"blue"} />
-      {dateFormat()}
-      <div>
-        {items.map((e) => (
-          <span key={e}>{e}, </span>
-        ))}
+      <div className="flex flex-col items-center justify-center gap-4 mt-40">
+        <H1>Next.js 13 Boilerplate 🚀</H1>
+
+        <Link
+          href="https://github.com/omergulcicek/nextjs-boilerplate"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button className="rounded">
+            <FiGithub />
+            <span>GitHub</span>
+          </Button>
+        </Link>
       </div>
-      <ThemeSwitch />
     </>
   )
-}
-
-export const metadata = {
-  title: "Home",
-  description: "Welcome to Next.js",
 }
